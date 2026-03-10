@@ -148,5 +148,9 @@ def login ():
     
     return jsonify(user)
 
+@app.route("/hello")
+def hello():
+    print("hello world")
+
 if __name__=="__main__":
     app.run(debug=True,port=5000)
